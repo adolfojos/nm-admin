@@ -27,18 +27,18 @@
                                             <?php foreach($data["posts"] as $post):?>
                                             <tr>
                                                 <td width="35%">Nombre del Plantel</td>
-                                                <td width="65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username"><?=$post->name;?></a></td>
+                                                <td width="65%"><a href="#" id="name" data-type="text" data-pk="<?=$post->id;?>" data-title="Ingrese Nombre del Plantel"><?=$post->name;?></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Codigo del Plantel</td>
                                                 <td>
-                                                    <a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username"><?=$post->code;?></a></td>
+                                                    <a href="#" id="code" data-type="text" data-pk="<?=$post->id;?>" data-title="Ingrese Codigo"><?=$post->code;?></a></td>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Zona Educativa</td>
                                                 <td>
-                                                    <a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username"><?=$post->zone;?></a></td>
+                                                    <a href="#" id="zone" data-type="text" data-pk="1" data-title="Ingrese la zona a la que pertenece el Plantel"><?=$post->zone;?></a></td>
                                                 </td>
                                             </tr>
                                             <tr>

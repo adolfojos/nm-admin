@@ -15,6 +15,10 @@
     <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
     <!-- Menu CSS -->
     <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    
+    <!-- xeditable css -->
+    <link href="plugins/bower_components/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" />
+    
     <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -247,6 +251,7 @@
 
     <!-- jQuery -->
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/dist/js/tether.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
@@ -259,6 +264,34 @@
     <script src="js/waves.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
+
+
+    <script src="plugins/bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src="plugins/bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+       
+
+
+        $('#name').editable({
+            url: './?action=x-updatecampus',
+            type: 'text',
+            mode: 'inline'
+        });
+
+        $('#code').editable({
+            type: 'text',
+            mode: 'inline'
+        });
+        $('#zone').editable({
+            type: 'text',
+            mode: 'inline'
+        });
+
+
+                });
+    </script>
+
     <script src="plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
     <!-- start - This is for export functionality only -->
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
